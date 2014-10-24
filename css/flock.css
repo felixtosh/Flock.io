@@ -1,0 +1,118 @@
+body {
+	background: #ebe8df;
+	font-family: "Roboto", Arial, Helvetica, Geneva, sans-serif;
+}
+html {
+	box-sizing:  border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-brand img {
+	margin-top: -13px;
+	-webkit-transition: opacity 0.8s; /* For Safari 3.1 to 6.0 */
+	transition: opacity 0.8s;
+	opacity: 1;
+}
+.navbar:hover .navbar-brand img {
+	opacity: 0.7;
+}
+
+.company {
+	background: #e6e6db;
+	padding: 12px 0;
+	text-align: center;
+}
+.company h2 {
+	color: #831d1d;
+	margin-top: 5px;
+	font-size: 1.2em;
+}
+
+.mission {
+	margin: 22px auto;
+	max-width: 600px;
+}
+.goal-list {
+	list-style-type: none;
+	margin: 22px auto;
+	max-width: 600px;
+	padding: 12px 0;
+	text-align: left;
+}
+.goal-list li {
+	border-left: 3px solid #ccc;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0 0 2px 0;
+}
+.goal-list li.seperator {
+	border: none;
+	background: none;
+	padding: 1px 12px 0 12px;
+	font-weight: bold;
+	color: #999;
+}
+.goal-list li label, .goal-list li.seperator {
+	padding: 5px 12px;
+	display: block;
+	margin: 0;
+}
+.goal-list li:nth-of-type(2n) {
+	border-left-color: #aaa;
+}
+
+.goal-list li input[type="checkbox"] {
+	float: left;
+	margin-right: 10px;
+}
+.goal-list li input[type="text"] {
+	padding: 12px 12px;
+	border: none;
+	outline: none;
+}
+.goal-list div {
+	display: block;
+	overflow: hidden;
+}
+
+/* --------
+CLEARFIX
+-------- */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
